@@ -20,8 +20,8 @@
             }
           };
         })({
-  "json": "/sql-console/monacoeditorwork/json.worker.bundle.js",
-  "editorWorkerService": "/sql-console/monacoeditorwork/editor.worker.bundle.js"
+  "json": "/ui/monacoeditorwork/json.worker.bundle.js",
+  "editorWorkerService": "/ui/monacoeditorwork/editor.worker.bundle.js"
 });</script>
 
   <title>ClickHouse SQL Console</title>
@@ -29,17 +29,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Standalone SQL Console for ClickHouse">
 
-  <link rel="icon" type="image/png" href="/sql-console/favicon.ico" />
-  <link rel="preload" href="/sql-console/fonts/Inter-300.woff2" as="font" crossorigin>
-  <link rel="preload" href="/sql-console/fonts/Inter-400.woff2" as="font" crossorigin>
-  <link rel="preload" href="/sql-console/fonts/Inter-500.woff2" as="font" crossorigin>
-  <link rel="preload" href="/sql-console/fonts/Inter-600.woff2" as="font" crossorigin>
-  <link rel="preload" href="/sql-console/fonts/Inter-700.woff2" as="font" crossorigin>
-  <link rel="preload" href="/sql-console/fonts/Inconsolata-300.woff2" as="font" crossorigin>
-  <link rel="preload" href="/sql-console/fonts/Inconsolata-400.woff2" as="font" crossorigin>
-  <link rel="preload" href="/sql-console/fonts/Inconsolata-500.woff2" as="font" crossorigin>
-  <link rel="preload" href="/sql-console/fonts/Inconsolata-600.woff2" as="font" crossorigin>
-  <link rel="preload" href="/sql-console/fonts/Inconsolata-700.woff2" as="font" crossorigin>
+  <link rel="icon" type="image/png" href="/ui/favicon.ico" />
+  <link rel="preload" href="/ui/fonts/Inter-300.woff2" as="font" crossorigin>
+  <link rel="preload" href="/ui/fonts/Inter-400.woff2" as="font" crossorigin>
+  <link rel="preload" href="/ui/fonts/Inter-500.woff2" as="font" crossorigin>
+  <link rel="preload" href="/ui/fonts/Inter-600.woff2" as="font" crossorigin>
+  <link rel="preload" href="/ui/fonts/Inter-700.woff2" as="font" crossorigin>
+  <link rel="preload" href="/ui/fonts/Inconsolata-300.woff2" as="font" crossorigin>
+  <link rel="preload" href="/ui/fonts/Inconsolata-400.woff2" as="font" crossorigin>
+  <link rel="preload" href="/ui/fonts/Inconsolata-500.woff2" as="font" crossorigin>
+  <link rel="preload" href="/ui/fonts/Inconsolata-600.woff2" as="font" crossorigin>
+  <link rel="preload" href="/ui/fonts/Inconsolata-700.woff2" as="font" crossorigin>
 
   <style>
     /* Inter */
@@ -48,7 +48,7 @@
         font-style: normal;
         font-weight: 300;
         font-display: swap;
-        src: url("/sql-console/fonts/Inter-300.woff2") format("woff2");
+        src: url("/ui/fonts/Inter-300.woff2") format("woff2");
     }
 
     @font-face {
@@ -56,7 +56,7 @@
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url("/sql-console/fonts/Inter-400.woff2") format("woff2");
+        src: url("/ui/fonts/Inter-400.woff2") format("woff2");
     }
 
     @font-face {
@@ -64,7 +64,7 @@
         font-style: normal;
         font-weight: 500;
         font-display: swap;
-        src: url("/sql-console/fonts/Inter-500.woff2") format("woff2");
+        src: url("/ui/fonts/Inter-500.woff2") format("woff2");
     }
 
     @font-face {
@@ -72,7 +72,7 @@
         font-style: normal;
         font-weight: 600;
         font-display: swap;
-        src: url("/sql-console/fonts/Inter-600.woff2") format("woff2");
+        src: url("/ui/fonts/Inter-600.woff2") format("woff2");
     }
 
     @font-face {
@@ -80,7 +80,7 @@
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url("/sql-console/fonts/Inter-700.woff2") format("woff2");
+        src: url("/ui/fonts/Inter-700.woff2") format("woff2");
     }
 
     /* Inconsolata */
@@ -89,7 +89,7 @@
         font-style: normal;
         font-weight: 300;
         font-display: swap;
-        src: url("/sql-console/fonts/Inconsolata-300.woff2") format("woff2");
+        src: url("/ui/fonts/Inconsolata-300.woff2") format("woff2");
     }
 
     @font-face {
@@ -97,7 +97,7 @@
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url("/sql-console/fonts/Inconsolata-400.woff2") format("woff2");
+        src: url("/ui/fonts/Inconsolata-400.woff2") format("woff2");
     }
 
     @font-face {
@@ -105,7 +105,7 @@
         font-style: normal;
         font-weight: 500;
         font-display: swap;
-        src: url("/sql-console/fonts/Inconsolata-500.woff2") format("woff2");
+        src: url("/ui/fonts/Inconsolata-500.woff2") format("woff2");
     }
 
     @font-face {
@@ -113,7 +113,7 @@
         font-style: normal;
         font-weight: 600;
         font-display: swap;
-        src: url("/sql-console/fonts/Inconsolata-600.woff2") format("woff2");
+        src: url("/ui/fonts/Inconsolata-600.woff2") format("woff2");
     }
 
     @font-face {
@@ -121,7 +121,7 @@
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url("/sql-console/fonts/Inconsolata-700.woff2") format("woff2");
+        src: url("/ui/fonts/Inconsolata-700.woff2") format("woff2");
     }
   </style>
   <script type="text/javascript">
@@ -137,13 +137,13 @@
       overflow: hidden;
     }
   </style>
-  <script type="module" crossorigin src="/sql-console/assets/index-D6Bs_6E7.js"></script>
-  <link rel="modulepreload" crossorigin href="/sql-console/assets/click-ui-BUUSVJjQ.js">
-  <link rel="stylesheet" crossorigin href="/sql-console/assets/index-DxsIyH4h.css">
+  <script type="module" crossorigin src="/ui/assets/index-DGa8Bsue.js"></script>
+  <link rel="modulepreload" crossorigin href="/ui/assets/click-ui-Dfl3-F-1.js">
+  <link rel="stylesheet" crossorigin href="/ui/assets/index-TtB-4lqD.css">
 </head>
 
 <body>
-  <script src="/sql-console/env.js" type="text/javascript"></script>
+  <script src="/ui/env.js" type="text/javascript"></script>
   <div id="root"></div>
 </body>
 
